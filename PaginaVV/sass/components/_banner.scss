@@ -1,0 +1,52 @@
+.banner {
+  position: relative;
+  background-size: cover !important;
+  margin-bottom: 15%;
+
+  > img {
+    width: 100%;
+    top: 0;
+    margin: auto;
+  }
+
+  .columns {
+    .column {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  form {
+    margin-top: 40px;
+
+    input {
+      padding: 12px 20px;
+      width: 100%;
+      margin-right: 5px;
+    }
+
+    button {
+      background: $primary;
+      color: white;
+      border: none;
+      font-weight: bold;
+      white-space: nowrap;
+      padding: 12px 20px;
+      cursor: pointer;
+
+      &:hover {
+        background: darken($primary, 5%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner .column div {
+    width: 100%;
+
+    p {
+      margin: auto;
+    }
+  }
+}
